@@ -1,0 +1,182 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 6.11-3 replay file
+# Internal Version: 2011_12_07-08.24.59 112213
+# Run by admin on Sat Dec 15 20:35:32 2018
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=234.883331298828, 
+    height=162.066665649414)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='Job-1.odb')
+#: Model: D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle30 Friction0.4/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     6
+#: Number of Meshes:             6
+#: Number of Element Sets:       6
+#: Number of Node Sets:          11
+#: Number of Steps:              4
+session.viewports['Viewport: 1'].setValues(displayedObject=o2)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].odbDisplay.setValues(viewCutNames=('Z-Plane', 
+    ), viewCut=ON)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=460.553, 
+    farPlane=539.307, width=183.428, height=97.6118, viewOffsetX=0.519768, 
+    viewOffsetY=2.25375)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=9)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=10)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=11)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=14)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=15)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=18)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=19)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=20)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-3', frame=0)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-3', frame=1)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-3', frame=2)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-3', frame=17)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-3', frame=16)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-2', frame=20)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-4', frame=29)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-4', frame=28)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-4', frame=29)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-4', frame=30)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=479.513, 
+    farPlane=520.348, width=40.6615, height=21.6381, viewOffsetX=21.1927, 
+    viewOffsetY=8.46456)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S11'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=397.233, 
+    farPlane=455.177, width=105.026, height=55.8897, viewOffsetX=-39.3271, 
+    viewOffsetY=0.954309)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=359.384, 
+    farPlane=568.441, width=95.0186, height=50.5644, cameraPosition=(-405.021, 
+    8.05975, 235.173), cameraUpVector=(-0.0370913, 0.995983, 0.0814936), 
+    cameraTarget=(-16.7135, 38.1341, 44.3522), viewOffsetX=-35.58, 
+    viewOffsetY=0.863381)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=366.047, 
+    farPlane=561.778, width=48.9997, height=26.0753, viewOffsetX=-45.0472, 
+    viewOffsetY=-0.433554)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=369.479, 
+    farPlane=550.714, width=49.4591, height=26.3198, cameraPosition=(-373.068, 
+    37.1901, 280.327), cameraUpVector=(-0.0119483, 0.999907, 0.00664442), 
+    cameraTarget=(-9.26159, 43.1058, 44.2979), viewOffsetX=-45.4695, 
+    viewOffsetY=-0.437619)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=368.63, 
+    farPlane=551.564, width=52.4951, height=27.9354, viewOffsetX=-49.306, 
+    viewOffsetY=-2.37536)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=365.47, 
+    farPlane=543.73, width=52.0451, height=27.696, cameraPosition=(-324.112, 
+    -0.274094, 327.138), cameraUpVector=(-0.0395704, 0.995135, 0.0902224), 
+    cameraTarget=(0.325853, 38.4838, 41.94), viewOffsetX=-48.8833, 
+    viewOffsetY=-2.355)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=364.247, 
+    farPlane=549.451, width=51.8709, height=27.6033, cameraPosition=(-344.426, 
+    -5.33013, 307.689), cameraUpVector=(-0.0681, 0.994431, 0.0804288), 
+    cameraTarget=(-3.4803, 39.3948, 43.386), viewOffsetX=-48.7197, 
+    viewOffsetY=-2.34712)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=370.178, 
+    farPlane=539.474, width=52.7156, height=28.0528, cameraPosition=(-327.63, 
+    41.0114, 326.425), cameraUpVector=(-0.00985532, 0.999948, -0.00258032), 
+    cameraTarget=(-0.0834806, 43.506, 42.1585), viewOffsetX=-49.5131, 
+    viewOffsetY=-2.38534)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=369.43, 
+    farPlane=550.077, width=52.6091, height=27.9961, cameraPosition=(-371.276, 
+    43.8114, 282.285), cameraUpVector=(-0.0229505, 0.999319, -0.0288872), 
+    cameraTarget=(-8.41906, 45.2777, 44.7287), viewOffsetX=-49.4131, 
+    viewOffsetY=-2.38052)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=-0.8)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=-0.5)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=-0.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=16.6)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.5)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=19.9)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=-0.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.0999995)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.4)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=0.7)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.8)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.5)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=19.9)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=19.9)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=20.2)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=19.9)
+session.viewports['Viewport: 1'].odbDisplay.viewCuts['Z-Plane'].setValues(
+    position=10)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])

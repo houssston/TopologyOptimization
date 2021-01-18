@@ -1,0 +1,154 @@
+--------------------------------------------------------------------------------
+Translator Name    : Spatial InterOp Connect ( Version : 22 0 0)
+System Name        : Windows_NT
+Machine Name       : DESKTOP-5JJO7TR
+User Name          : admin
+Source System      : IGES
+Destination System : ACIS
+Input File         : D:\MyProject(31.11.18)\ver1\bin\Debug\Temp 08.12.2018[14.08.10]\Length 40 Width20 Height80 Angle20 Friction0.24\Upper.IGS
+Start Time         : Sat Dec 08 17:59:14 2018
+
+--------------------------------------------------------------------------------
+----------------------------Source File Scan Summary----------------------------
+
+Entity     No.Entity Type        Count    Support    Roots    Hidden    Mask-Ex
+
+100  Circular Arc                  8        Supported    0         8       0
+102  Composite Curve               24       Supported    0        24       0
+110  Line                          56       Supported    0        56       0
+120  Surface Of Revolution         2        Supported    0         2       0
+124  Transformation Matrix         6        Supported    6         0       0
+126  Rational B-Spline Curve       60       Supported    0        60       0
+128  Rational B-Spline Surface     10       Supported    0        10       0
+142  Curve On Parametric Surface   12       Supported    0         0       0
+144  Trimmed Surface               12       Supported   12         0       0
+314  Color Definition              1        Supported    1         0       0
+Message : === Translation Options ===
+Message : IGES.Brep.TrimCurveReadPreference : 0
+Message : TranslateSolidBodies : false
+Message : TranslateHiddenEntities : true
+Message : Representation : BRep+Assembly
+Message : TranslateAssemblies : true
+Message : Healing : true
+Message : ===========================
+-------------------------Source File Header Information-------------------------
+Date+Time of Creation    : 181208.175905
+Modification Date        : 08 DEC 18
+File Name                : D:\MyProject(31.11.18)\ver1\bin\Debug\Temp 08.12.2018[14.08.10]\Length 40 Width20 Height80 Angle20 Friction0.24\Upper.IGS
+Author                   : admin
+Organization             : Unspecified
+Source System            : SolidWorks 2016
+Sending Product ID       : 2
+Receiving System ID      : 2
+Preprocessor Version     : SolidWorks 2016
+Version                  : 5.3
+Units                    : MM
+Units ID                 : 2
+Tolerance                : 0.000000
+Maximum Coordinate       : 499990.000000
+Model Scale              : 1.000000
+Line Weight              : 1
+Line Width               : 1.000000
+Document Type            : Part
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Source Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start BRep
+--------------------------------------------------------------------------------
+----------------------------Source File Scan Summary----------------------------
+
+Entity     No.Entity Type        Count    Support    Roots    Hidden    Mask-Ex
+
+100  Circular Arc                  8        Supported    0         8       0
+102  Composite Curve               24       Supported    0        24       0
+110  Line                          56       Supported    0        56       0
+120  Surface Of Revolution         2        Supported    0         2       0
+124  Transformation Matrix         6        Supported    6         0       0
+126  Rational B-Spline Curve       60       Supported    0        60       0
+128  Rational B-Spline Surface     10       Supported    0        10       0
+142  Curve On Parametric Surface   12       Supported    0         0       0
+144  Trimmed Surface               12       Supported   12         0       0
+314  Color Definition              1        Supported    1         0       0
+--------------------------------------------------------------------------------
+BRep Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End BRep
+------------------------Representation Conversion Summary-----------------------
+No. of Acorn Bodies                       :    0
+No. of Mixed Bodies                       :    0
+No. of Solid Bodies                       :    12
+No. of Wire Bodies                        :    0
+No. of Free Surfaces                      :    0
+No. of Free Curves                        :    0
+No. of Sheet Bodies                       :    0
+No. of Free Points                        :    0
+--------------------------------------------------------------------------------
+BRep Conversion Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start DocumentFeature
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End DocumentFeature
+------------------------Representation Conversion Summary-----------------------
+No. of Selection Sets                     :    0
+No. of Working Coordinate Systems         :    0
+No. of Associative Groups                 :    0
+No. of Layer Filters                      :    0
+--------------------------------------------------------------------------------
+DocumentFeature Conversion Result : No Entity to Translate
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start Assembly
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Assembly Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Assembly Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Assembly Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End Assembly
+Assembly Conversion Result : No Entity to Translate
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+---------------------------Document Conversion Summary--------------------------
+No. of Items of DocumentFeature Representation :    0
+No. of Items of BRep Representation            :    12
+--------------------------------------------------------------------------------
+Finish Time : Sat Dec 08 17:59:14 2018
+
+--------------------------------------------------------------------------------
+Translation Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

@@ -1,0 +1,411 @@
+Abaqus/Explicit 6.11-3                           DATE 09-Dec-2018  TIME 16:40:17
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 78 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+           DOMAIN DECOMPOSITION INFORMATION
+-------------------------------------------------------------------------------
+
+
+     DOMAIN 1 HAS 756 ELEMENTS AND 1100 NODES with WEIGHTS 44.123.
+          There are 620 nodes shared with following domains:
+              Domain  2 with 620 nodes
+
+     DOMAIN 2 HAS 1839 ELEMENTS AND 2577 NODES with WEIGHTS 55.877.
+          There are 620 nodes shared with following domains:
+              Domain  1 with 620 nodes
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 2.88000E-04
+   Center of mass of model = (-7.141448E-07, 4.000000E+01, 1.000000E+01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          1.643141E-01                  6.539141E-01
+      I(YY)          4.916805E-02                  7.796804E-02
+      I(ZZ)          1.932155E-01                  6.540154E-01
+      I(XY)          2.194731E-10                  8.446420E-09
+      I(YZ)         -8.879159E-09                 -1.152000E-01
+      I(ZX)          5.209716E-11                  2.108834E-09
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 3.82809E-07
+
+   Statistics for all elements:
+      Mean = 3.82806E-07
+      Standard deviation = 1.54470E-09
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+        1267          1       3.828088E-07      1.000000E+00
+    MODEL-1
+        1269          2       3.828088E-07      1.000000E+00
+    MODEL-1
+        1290          3       3.828088E-07      1.000000E+00
+    MODEL-1
+        1292          4       3.828088E-07      1.000000E+00
+    MODEL-1
+        1313          5       3.828088E-07      1.000000E+00
+    MODEL-1
+        1315          6       3.828088E-07      1.000000E+00
+    MODEL-1
+        1336          7       3.828088E-07      1.000000E+00
+    MODEL-1
+        1338          8       3.828088E-07      1.000000E+00
+    MODEL-1
+        1244          9       3.828088E-07      1.000000E+00
+    MODEL-1
+        1246         10       3.828088E-07      1.000000E+00
+    MODEL-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+
+Abaqus/Explicit 6.11-3                           DATE 09-Dec-2018  TIME 16:40:18
+
+The single precision Abaqus/Explicit executable will be used in this analysis.
+
+The model has been decomposed into 2 domains.
+Domain level parallelization will be used with 2 processors.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 7.1 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 3.828E-07        1244  0.000E+00  0.000E+00
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      0 of     20 requested intervals at increment zero.
+     5207  2.500E-03 2.500E-03  00:00:04 4.798E-07        1014  1.506E+01  5.121E-01
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      1 of     20 requested intervals at  2.500104E-03
+    10461  5.000E-03 5.000E-03  00:00:08 4.704E-07         254  4.441E+01  1.080E+01
+ODB Field Frame Number      2 of     20 requested intervals at  5.000068E-03
+    15838  7.500E-03 7.500E-03  00:00:13 4.593E-07         255  4.940E+01  3.908E+01
+ODB Field Frame Number      3 of     20 requested intervals at  7.500459E-03
+    21356  1.000E-02 1.000E-02  00:00:17 4.467E-07         255  3.135E+01  8.543E+01
+ODB Field Frame Number      4 of     20 requested intervals at  1.000031E-02
+    27039  1.250E-02 1.250E-02  00:00:22 4.361E-07        1358  2.368E+01  1.051E+02
+ODB Field Frame Number      5 of     20 requested intervals at  1.250007E-02
+    32917  1.500E-02 1.500E-02  00:00:27 4.160E-07         255  1.873E+01  1.268E+02
+ODB Field Frame Number      6 of     20 requested intervals at  1.500020E-02
+    39029  1.750E-02 1.750E-02  00:00:32 4.019E-07        1244  1.726E+01  1.616E+02
+ODB Field Frame Number      7 of     20 requested intervals at  1.750009E-02
+    45386  2.000E-02 2.000E-02  00:00:37 3.888E-07         254  1.908E+01  2.025E+02
+ODB Field Frame Number      8 of     20 requested intervals at  2.000004E-02
+    51993  2.250E-02 2.250E-02  00:00:42 3.695E-07         139  1.849E+01  2.825E+02
+ODB Field Frame Number      9 of     20 requested intervals at  2.250023E-02
+    58855  2.500E-02 2.500E-02  00:00:48 3.592E-07        1244  1.860E+01  3.651E+02
+ODB Field Frame Number     10 of     20 requested intervals at  2.500032E-02
+    65968  2.750E-02 2.750E-02  00:00:54 3.465E-07         809  2.038E+01  4.293E+02
+ODB Field Frame Number     11 of     20 requested intervals at  2.750029E-02
+    73395  3.000E-02 3.000E-02  00:01:00 3.311E-07        1243  2.129E+01  5.134E+02
+ODB Field Frame Number     12 of     20 requested intervals at  3.000013E-02
+    81128  3.250E-02 3.250E-02  00:01:07 3.169E-07        1358  2.170E+01  5.932E+02
+ODB Field Frame Number     13 of     20 requested intervals at  3.250026E-02
+    89180  3.500E-02 3.500E-02  00:01:13 3.041E-07        1358  2.157E+01  6.610E+02
+ODB Field Frame Number     14 of     20 requested intervals at  3.500019E-02
+    97655  3.750E-02 3.750E-02  00:01:20 2.872E-07        1243  2.375E+01  7.324E+02
+ODB Field Frame Number     15 of     20 requested intervals at  3.750007E-02
+   106583  4.000E-02 4.000E-02  00:01:28 2.738E-07        1243  2.506E+01  8.723E+02
+ODB Field Frame Number     16 of     20 requested intervals at  4.000000E-02
+   115947  4.250E-02 4.250E-02  00:01:35 2.611E-07        1243  2.403E+01  1.029E+03
+ODB Field Frame Number     17 of     20 requested intervals at  4.250011E-02
+   125724  4.500E-02 4.500E-02  00:01:44 2.502E-07        1358  2.614E+01  1.151E+03
+ODB Field Frame Number     18 of     20 requested intervals at  4.500008E-02
+   135954  4.750E-02 4.750E-02  00:01:52 2.385E-07         811  3.016E+01  1.245E+03
+ODB Field Frame Number     19 of     20 requested intervals at  4.750002E-02
+   146683  5.000E-02 5.000E-02  00:02:01 2.276E-07         811  2.921E+01  1.308E+03
+Restart Number  1 at 5.00000E-02
+ODB Field Frame Number     20 of     20 requested intervals at  5.000000E-02
+
+***WARNING: Jumps in displacement boundary conditions have been detected at
+            the beginning of step 2.  The maximum jump is 28.000 at node 201
+            of instance UPPER-1.  The node set "WarnNodeDispBCJump" has been
+            written to the .odb file for display in Abaqus/Viewer.  Check the
+            .msg file for more detailed information.
+
+
+***NOTE: Displacement boundary conditions with prescribed jumps will be
+         enforced as defined, minus the value of the jump. The jumps might be
+         caused by:
+            1) A discontinuous *BOUNDARY, TYPE=DISPLACEMENT definition.
+            2) Initial contact adjustments at the beginning of the first
+               step.
+            3) Locating the rigid body reference node with the POSITION=CENTER
+               OF MASS parameter.
+            4) Use of an amplitude curve to prescribe the boundary conditions
+               in an analysis with a large number of increments; precision
+               error may cause a small drift from the prescribed displacement.
+
+
+Abaqus/Explicit 6.11-3                           DATE 09-Dec-2018  TIME 16:43:09
+
+ STEP 2  ORIGIN 5.00000E-02
+
+  Total memory used for step 2 is approximately 8.2 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 5.000E-02  00:02:01 1.957E-07         811  2.921E+01  1.241E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      0 of     20 requested intervals at increment zero.
+
+***WARNING: THE ANALYSIS MAY NEED A LARGE NUMBER OF INCREMENTS (MORE THAN
+            300000), AND IT MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE
+            DOUBLE PRECISION EXECUTABLE IS RECOMMENDED.
+
+    11094  2.500E-03 5.250E-02  00:02:11 2.253E-07         139  1.342E+01  1.357E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      1 of     20 requested intervals at  5.250015E-02
+    22186  5.000E-03 5.500E-02  00:02:20 2.253E-07         139  1.813E+01  1.446E+03
+ODB Field Frame Number      2 of     20 requested intervals at  5.500007E-02
+    33279  7.500E-03 5.750E-02  00:02:29 2.252E-07         139  1.721E+01  1.635E+03
+ODB Field Frame Number      3 of     20 requested intervals at  5.750021E-02
+    44399  1.000E-02 6.000E-02  00:02:38 2.245E-07         139  1.898E+01  1.805E+03
+ODB Field Frame Number      4 of     20 requested intervals at  6.000022E-02
+    55537  1.250E-02 6.250E-02  00:02:48 2.241E-07         139  2.274E+01  2.048E+03
+ODB Field Frame Number      5 of     20 requested intervals at  6.250013E-02
+    66737  1.500E-02 6.500E-02  00:02:58 2.227E-07         254  2.523E+01  2.420E+03
+ODB Field Frame Number      6 of     20 requested intervals at  6.500017E-02
+    78019  1.750E-02 6.750E-02  00:03:07 2.205E-07        1472  2.635E+01  2.916E+03
+ODB Field Frame Number      7 of     20 requested intervals at  6.750011E-02
+    89490  2.000E-02 7.000E-02  00:03:17 2.094E-07        1472  2.628E+01  3.543E+03
+ODB Field Frame Number      8 of     20 requested intervals at  7.000019E-02
+   101521  2.250E-02 7.250E-02  00:03:27 1.968E-07        1472  3.504E+01  4.475E+03
+ODB Field Frame Number      9 of     20 requested intervals at  7.250009E-02
+   114361  2.500E-02 7.500E-02  00:03:39 1.860E-07        1472  3.084E+01  5.233E+03
+ODB Field Frame Number     10 of     20 requested intervals at  7.500009E-02
+   127995  2.750E-02 7.750E-02  00:03:51 1.760E-07        1472  3.374E+01  5.593E+03
+ODB Field Frame Number     11 of     20 requested intervals at  7.750000E-02
+   142417  3.000E-02 8.000E-02  00:04:04 1.693E-07          69  3.465E+01  5.915E+03
+ODB Field Frame Number     12 of     20 requested intervals at  8.000016E-02
+
+***WARNING: THE ANALYSIS REACHED A LARGE NUMBER OF INCREMENTS (300000), AND IT
+            MAY BE AFFECTED BY ROUND-OFF ERRORS. RUNNING THE DOUBLE PRECISION
+            EXECUTABLE IS RECOMMENDED.
+
+   157655  3.250E-02 8.250E-02  00:04:21 1.579E-07        1472  3.478E+01  6.070E+03
+ODB Field Frame Number     13 of     20 requested intervals at  8.250001E-02
+   173822  3.500E-02 8.500E-02  00:04:39 1.497E-07        1472  3.442E+01  6.205E+03
+ODB Field Frame Number     14 of     20 requested intervals at  8.500012E-02
+   192222  3.750E-02 8.750E-02  00:04:57 1.149E-07          69  4.294E+01  6.277E+03
+ODB Field Frame Number     15 of     20 requested intervals at  8.750010E-02
+   214593  4.000E-02 9.000E-02  00:05:14 1.143E-07        1472  4.213E+01  6.352E+03
+ODB Field Frame Number     16 of     20 requested intervals at  9.000006E-02
+   238184  4.250E-02 9.250E-02  00:05:32 1.034E-07          69  4.345E+01  6.432E+03
+ODB Field Frame Number     17 of     20 requested intervals at  9.250002E-02
+   263101  4.500E-02 9.500E-02  00:05:49 9.912E-08        1449  5.788E+01  6.516E+03
+ODB Field Frame Number     18 of     20 requested intervals at  9.500003E-02
+   289398  4.750E-02 9.750E-02  00:06:08 9.179E-08         824  6.382E+01  6.586E+03
+ODB Field Frame Number     19 of     20 requested intervals at  9.750006E-02
+   317654  5.000E-02 1.000E-01  00:06:28 8.806E-08         823  6.273E+01  6.705E+03
+Restart Number  1 at 0.10000
+ODB Field Frame Number     20 of     20 requested intervals at  1.000000E-01
+
+***WARNING: Jumps in displacement boundary conditions have been detected at
+            the beginning of step 3.  The maximum jump is 28.000 at node 201
+            of instance UPPER-1.  The node set "WarnNodeDispBCJump" has been
+            written to the .odb file for display in Abaqus/Viewer.  Check the
+            .msg file for more detailed information.
+
+
+***NOTE: Displacement boundary conditions with prescribed jumps will be
+         enforced as defined, minus the value of the jump. The jumps might be
+         caused by:
+            1) A discontinuous *BOUNDARY, TYPE=DISPLACEMENT definition.
+            2) Initial contact adjustments at the beginning of the first
+               step.
+            3) Locating the rigid body reference node with the POSITION=CENTER
+               OF MASS parameter.
+            4) Use of an amplitude curve to prescribe the boundary conditions
+               in an analysis with a large number of increments; precision
+               error may cause a small drift from the prescribed displacement.
+
+
+Abaqus/Explicit 6.11-3                           DATE 09-Dec-2018  TIME 16:49:48
+
+ STEP 3  ORIGIN 0.10000
+
+  Total memory used for step 3 is approximately 7.9 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 1.000E-01  00:06:28 8.806E-08         823  6.273E+01  6.689E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      0 of     20 requested intervals at increment zero.
+    26275  2.500E-03 1.025E-01  00:06:45 9.466E-08         823  7.995E+00  6.421E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      1 of     20 requested intervals at  1.025000E-01
+    52644  5.000E-03 1.050E-01  00:07:02 9.554E-08         824  5.779E+00  6.415E+03
+ODB Field Frame Number      2 of     20 requested intervals at  1.050001E-01
+    78943  7.500E-03 1.075E-01  00:07:18 9.487E-08         823  4.053E+00  6.408E+03
+ODB Field Frame Number      3 of     20 requested intervals at  1.075001E-01
+   105255  1.000E-02 1.100E-01  00:07:35 9.488E-08         823  4.845E+00  6.406E+03
+ODB Field Frame Number      4 of     20 requested intervals at  1.100001E-01
+   131569  1.250E-02 1.125E-01  00:07:53 9.487E-08         823  5.818E+00  6.404E+03
+ODB Field Frame Number      5 of     20 requested intervals at  1.125000E-01
+   157875  1.500E-02 1.150E-01  00:08:10 9.489E-08         823  5.235E+00  6.404E+03
+ODB Field Frame Number      6 of     20 requested intervals at  1.150000E-01
+   184180  1.750E-02 1.175E-01  00:08:28 9.491E-08         823  6.629E+00  6.396E+03
+ODB Field Frame Number      7 of     20 requested intervals at  1.175000E-01
+   210481  2.000E-02 1.200E-01  00:08:46 9.496E-08         823  9.719E+00  6.396E+03
+ODB Field Frame Number      8 of     20 requested intervals at  1.200000E-01
+   236790  2.250E-02 1.225E-01  00:09:04 9.504E-08         823  7.203E+00  6.392E+03
+ODB Field Frame Number      9 of     20 requested intervals at  1.225001E-01
+   263099  2.500E-02 1.250E-01  00:09:22 9.509E-08         823  4.633E+00  6.386E+03
+ODB Field Frame Number     10 of     20 requested intervals at  1.250001E-01
+   289404  2.750E-02 1.275E-01  00:09:40 9.513E-08         823  4.355E+00  6.381E+03
+ODB Field Frame Number     11 of     20 requested intervals at  1.275000E-01
+   315695  3.000E-02 1.300E-01  00:10:01 9.522E-08         823  3.015E+00  6.378E+03
+ODB Field Frame Number     12 of     20 requested intervals at  1.300001E-01
+   341726  3.250E-02 1.325E-01  00:10:21 9.538E-08         823  3.797E+00  6.378E+03
+ODB Field Frame Number     13 of     20 requested intervals at  1.325000E-01
+   367533  3.500E-02 1.350E-01  00:10:41 9.615E-08         824  5.762E+00  6.375E+03
+ODB Field Frame Number     14 of     20 requested intervals at  1.350001E-01
+   393307  3.750E-02 1.375E-01  00:11:00 9.585E-08         823  3.684E+00  6.372E+03
+ODB Field Frame Number     15 of     20 requested intervals at  1.375001E-01
+   419708  4.000E-02 1.400E-01  00:11:21 9.384E-08         823  4.094E+00  6.372E+03
+ODB Field Frame Number     16 of     20 requested intervals at  1.400000E-01
+   446406  4.250E-02 1.425E-01  00:11:42 9.476E-08         824  3.606E+00  6.366E+03
+ODB Field Frame Number     17 of     20 requested intervals at  1.425000E-01
+   472984  4.500E-02 1.450E-01  00:12:03 9.473E-08         823  4.878E+00  6.365E+03
+ODB Field Frame Number     18 of     20 requested intervals at  1.450001E-01
+   499029  4.750E-02 1.475E-01  00:12:22 9.541E-08         823  6.043E+00  6.358E+03
+ODB Field Frame Number     19 of     20 requested intervals at  1.475001E-01
+   524786  5.000E-02 1.500E-01  00:12:41 9.612E-08         823  7.916E+00  6.352E+03
+Restart Number  1 at 0.15000
+ODB Field Frame Number     20 of     20 requested intervals at  1.500000E-01
+
+***WARNING: Jumps in displacement boundary conditions have been detected at
+            the beginning of step 4.  The maximum jump is 28.000 at node 201
+            of instance UPPER-1.  The node set "WarnNodeDispBCJump" has been
+            written to the .odb file for display in Abaqus/Viewer.  Check the
+            .msg file for more detailed information.
+
+
+***NOTE: Displacement boundary conditions with prescribed jumps will be
+         enforced as defined, minus the value of the jump. The jumps might be
+         caused by:
+            1) A discontinuous *BOUNDARY, TYPE=DISPLACEMENT definition.
+            2) Initial contact adjustments at the beginning of the first
+               step.
+            3) Locating the rigid body reference node with the POSITION=CENTER
+               OF MASS parameter.
+            4) Use of an amplitude curve to prescribe the boundary conditions
+               in an analysis with a large number of increments; precision
+               error may cause a small drift from the prescribed displacement.
+
+
+Abaqus/Explicit 6.11-3                           DATE 09-Dec-2018  TIME 16:57:53
+
+ STEP 4  ORIGIN 0.15000
+
+  Total memory used for step 4 is approximately 7.9 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 1.500E-01  00:12:41 8.391E-08         823  7.916E+00  6.352E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      0 of     30 requested intervals at increment zero.
+    17334  1.667E-03 1.517E-01  00:12:52 9.613E-08         823  2.139E+00  6.351E+03
+INSTANCE WITH CRITICAL ELEMENT: MODEL-1
+ODB Field Frame Number      1 of     30 requested intervals at  1.516668E-01
+    34666  3.333E-03 1.533E-01  00:13:04 9.612E-08         823  1.427E+00  6.354E+03
+ODB Field Frame Number      2 of     30 requested intervals at  1.533334E-01
+    52020  5.000E-03 1.550E-01  00:13:16 9.612E-08         823  5.017E+00  6.355E+03
+ODB Field Frame Number      3 of     30 requested intervals at  1.550000E-01
+    69379  6.667E-03 1.567E-01  00:13:28 9.611E-08         823  2.910E+00  6.350E+03
+ODB Field Frame Number      4 of     30 requested intervals at  1.566667E-01
+    86720  8.333E-03 1.583E-01  00:13:41 9.650E-08         824  5.326E+00  6.349E+03
+ODB Field Frame Number      5 of     30 requested intervals at  1.583334E-01
+   104043  1.000E-02 1.600E-01  00:13:53 9.616E-08         823  2.315E+00  6.351E+03
+ODB Field Frame Number      6 of     30 requested intervals at  1.600001E-01
+   121344  1.167E-02 1.617E-01  00:14:05 9.660E-08         824  3.270E+00  6.349E+03
+ODB Field Frame Number      7 of     30 requested intervals at  1.616667E-01
+   138625  1.333E-02 1.633E-01  00:14:18 9.629E-08         823  5.741E+00  6.349E+03
+ODB Field Frame Number      8 of     30 requested intervals at  1.633333E-01
+   155876  1.500E-02 1.650E-01  00:14:30 9.827E-08         823  4.076E+00  6.346E+03
+ODB Field Frame Number      9 of     30 requested intervals at  1.650000E-01
+   173273  1.667E-02 1.667E-01  00:14:43 9.558E-08         824  4.265E+00  6.348E+03
+ODB Field Frame Number     10 of     30 requested intervals at  1.666668E-01
+   190652  1.833E-02 1.683E-01  00:14:55 9.558E-08         824  4.700E+00  6.345E+03
+ODB Field Frame Number     11 of     30 requested intervals at  1.683334E-01
+   207957  2.000E-02 1.700E-01  00:15:08 9.988E-08         708  6.031E+00  6.341E+03
+ODB Field Frame Number     12 of     30 requested intervals at  1.700000E-01
+   224995  2.167E-02 1.717E-01  00:15:20 9.957E-08         709  8.621E+00  6.342E+03
+ODB Field Frame Number     13 of     30 requested intervals at  1.716668E-01
+   241756  2.333E-02 1.733E-01  00:15:32 1.001E-07        1518  1.048E+01  6.350E+03
+ODB Field Frame Number     14 of     30 requested intervals at  1.733334E-01
+   258420  2.500E-02 1.750E-01  00:15:45 9.957E-08        1518  1.181E+01  6.353E+03
+ODB Field Frame Number     15 of     30 requested intervals at  1.750001E-01
+   275276  2.667E-02 1.767E-01  00:15:58 9.925E-08        1403  1.028E+01  6.409E+03
+ODB Field Frame Number     16 of     30 requested intervals at  1.766667E-01
+   292158  2.833E-02 1.783E-01  00:16:11 9.898E-08        1403  1.807E+01  6.521E+03
+ODB Field Frame Number     17 of     30 requested intervals at  1.783334E-01
+   309080  3.000E-02 1.800E-01  00:16:25 9.817E-08         708  2.409E+01  6.702E+03
+ODB Field Frame Number     18 of     30 requested intervals at  1.800001E-01
+   326404  3.167E-02 1.817E-01  00:16:39 8.927E-08         823  4.400E+01  6.915E+03
+ODB Field Frame Number     19 of     30 requested intervals at  1.816667E-01
+   344576  3.333E-02 1.833E-01  00:16:54 8.781E-08         822  9.637E+01  7.091E+03
+ODB Field Frame Number     20 of     30 requested intervals at  1.833334E-01
+   363787  3.500E-02 1.850E-01  00:17:10 8.353E-08         708  3.329E+01  7.168E+03
+ODB Field Frame Number     21 of     30 requested intervals at  1.850001E-01
+   383475  3.667E-02 1.867E-01  00:17:26 8.534E-08         822  4.763E+01  7.229E+03
+ODB Field Frame Number     22 of     30 requested intervals at  1.866667E-01
+   403916  3.833E-02 1.883E-01  00:17:42 8.393E-08         822  3.517E+01  7.341E+03
+ODB Field Frame Number     23 of     30 requested intervals at  1.883334E-01
+   425813  4.000E-02 1.900E-01  00:18:00 7.889E-08         706  4.147E+01  7.463E+03
+ODB Field Frame Number     24 of     30 requested intervals at  1.900000E-01
+   448043  4.167E-02 1.917E-01  00:18:18 7.533E-08         821  4.307E+01  7.601E+03
+ODB Field Frame Number     25 of     30 requested intervals at  1.916667E-01
+   470676  4.333E-02 1.933E-01  00:18:36 7.394E-08         821  7.744E+01  7.744E+03
+ODB Field Frame Number     26 of     30 requested intervals at  1.933334E-01
+   493884  4.500E-02 1.950E-01  00:18:54 6.903E-08         822  1.251E+02  7.879E+03
+ODB Field Frame Number     27 of     30 requested intervals at  1.950000E-01
+   518236  4.667E-02 1.967E-01  00:19:14 6.949E-08         822  5.922E+01  8.032E+03
+ODB Field Frame Number     28 of     30 requested intervals at  1.966667E-01
+   542848  4.833E-02 1.983E-01  00:19:34 6.744E-08         706  1.033E+02  8.211E+03
+ODB Field Frame Number     29 of     30 requested intervals at  1.983334E-01
+   567630  5.000E-02 2.000E-01  00:19:53 6.620E-08         820  6.998E+01  8.412E+03
+Restart Number  1 at 0.20000
+ODB Field Frame Number     30 of     30 requested intervals at  2.000000E-01
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

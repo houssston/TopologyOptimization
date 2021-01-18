@@ -1,0 +1,26 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.11-3 replay file
+# Internal Version: 2011_12_07-08.24.59 112213
+# Run by admin on Sat Dec 08 19:28:23 2018
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.41667, 1.41667), width=208.533, 
+    height=140.533)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('TempAbaqusMacros.py', __main__.__dict__)
+#: Warning: Index 12 in the sequence is out of range
+#: Warning: Index 13 in the sequence is out of range
+#: The interaction property "IntProp-1" has been created.
+#: The interaction "Upper" has been created.
+#: The interaction "Tool" has been created.
+#: The interaction "Lower" has been created.
+print 'RT script done'
+#: RT script done

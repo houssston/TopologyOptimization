@@ -1,0 +1,79 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 6.11-3 replay file
+# Internal Version: 2011_12_07-08.24.59 112213
+# Run by admin on Sun Dec 16 00:52:37 2018
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=234.883331298828, 
+    height=162.066665649414)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='Job-1.odb')
+#: Model: D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle30 Friction0.36/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     6
+#: Number of Meshes:             6
+#: Number of Element Sets:       6
+#: Number of Node Sets:          11
+#: Number of Steps:              4
+session.viewports['Viewport: 1'].setValues(displayedObject=o2)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='LE', outputPosition=INTEGRATION_POINT, refinement=(
+    INVARIANT, 'Max. Principal'), )
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(
+    plotState=CONTOURS_ON_DEF)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='LE', outputPosition=INTEGRATION_POINT, refinement=(
+    COMPONENT, 'LE12'), )
+session.viewports['Viewport: 1'].odbDisplay.setValues(viewCutNames=('Z-Plane', 
+    ), viewCut=ON)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=463.263, 
+    farPlane=536.597, width=163.031, height=86.7573, viewOffsetX=1.08739, 
+    viewOffsetY=8.9103)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='LE', outputPosition=INTEGRATION_POINT, refinement=(
+    COMPONENT, 'LE11'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='LE', outputPosition=INTEGRATION_POINT, refinement=(
+    COMPONENT, 'LE12'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=464.444, 
+    farPlane=535.416, width=163.447, height=86.9785, cameraPosition=(0.966884, 
+    39.9309, 509.93), cameraUpVector=(-0.0999431, 0.994993, 0), cameraTarget=(
+    0.966884, 39.9309, 10.0001), viewOffsetX=1.09016, viewOffsetY=8.93302)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=393.8, 
+    farPlane=604.915, width=138.586, height=73.7487, cameraPosition=(367.71, 
+    -34.6055, 339.517), cameraUpVector=(0.0436189, 0.983823, 0.173754), 
+    cameraTarget=(-0.0391579, 40.0394, 9.18619), viewOffsetX=0.924341, 
+    viewOffsetY=7.57427)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=386.934, 
+    farPlane=612.905, width=136.17, height=72.4629, cameraPosition=(465.824, 
+    -15.1696, 182.878), cameraUpVector=(0.0015368, 0.954522, 0.298135), 
+    cameraTarget=(0.616627, 40.0901, 8.35533), viewOffsetX=0.908225, 
+    viewOffsetY=7.44221)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=398.877, 
+    farPlane=600.962, width=40.7231, height=21.6709, viewOffsetX=17.8734, 
+    viewOffsetY=7.1745)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=406.023, 
+    farPlane=594.443, width=41.4526, height=22.0591, cameraPosition=(458.929, 
+    32.7594, 208.935), cameraUpVector=(-0.130783, 0.936933, 0.324119), 
+    cameraTarget=(1.46277, 38.6249, 7.39131), viewOffsetX=18.1936, 
+    viewOffsetY=7.30302)
+session.viewports['Viewport: 1'].view.setValues(session.views['Front'])
+session.viewports['Viewport: 1'].view.setValues(nearPlane=391.197, 
+    farPlane=461.213, width=150.54, height=80.1102, viewOffsetX=6.36168, 
+    viewOffsetY=2.58033)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=18)
+session.viewports[session.currentViewportName].odbDisplay.setFrame(
+    step='Step-1', frame=17)

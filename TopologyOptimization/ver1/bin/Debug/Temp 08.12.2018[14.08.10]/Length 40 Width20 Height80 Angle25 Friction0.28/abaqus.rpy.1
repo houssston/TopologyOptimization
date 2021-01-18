@@ -1,0 +1,27 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.11-3 replay file
+# Internal Version: 2011_12_07-08.24.59 112213
+# Run by admin on Sun Dec 09 14:55:48 2018
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.41667, 1.41667), width=208.533, 
+    height=140.533)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('abaqusMacros.py', __main__.__dict__)
+#: The interaction property "IntProp-1" has been created.
+#: The interaction "Upper" has been created.
+#: The interaction "Tool" has been created.
+#: The interaction "Lower" has been created.
+#: The interaction "UpperPlate" has been created.
+#: The interaction "LowerPlate" has been created.
+#: The model database has been saved to "D:\MyProject(31.11.18)\ver1\bin\Debug\Temp 09.12.2018[14.14.06]\Length 40 Width20 Height80 Angle25 Friction0.28\cae.cae".
+print 'RT script done'
+#: RT script done

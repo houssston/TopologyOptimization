@@ -1,0 +1,58 @@
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\bin\Debug\ver1.exe
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\bin\Debug\ver1.pdb
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.Form1.resources
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.exe
+c:\users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.pdb
+C:\Users\admin\documents\visual studio 2010\Projects\ver1\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.exe
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.pdb
+C:\Users\admin\Desktop\ver1\ver1\bin\Debug\ver1.exe
+C:\Users\admin\Desktop\ver1\ver1\bin\Debug\ver1.pdb
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\ver1\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\bin\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\bin\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+F:\ДИПЛОМ\ver1(29.09.18)\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+F:\ДИПЛОМ\ver1(29,09,18)\ver1\obj\x86\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(29,09,18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\bin\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(16,10,18)\ver1\bin\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\bin\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\bin\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+F:\ДИПЛОМ\ver1(25,10,18)\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\bin\Debug\ver1.exe
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\bin\Debug\ver1.pdb
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+F:\ДИПЛОМ\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.exe
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.pdb
+F:\ver1(30,10,18)\ver1\bin\Debug\ver1.exe
+F:\ver1(30,10,18)\ver1\bin\Debug\ver1.pdb
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.csprojResolveAssemblyReference.cache
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.program1.resources
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.Properties.Resources.resources
+F:\ver1(30,10,18)\ver1\obj\x86\Debug\ver1.csproj.GenerateResource.Cache

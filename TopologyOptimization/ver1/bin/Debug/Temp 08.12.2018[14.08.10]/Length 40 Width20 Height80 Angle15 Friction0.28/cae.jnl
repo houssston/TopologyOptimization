@@ -1,0 +1,269 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/Model.IGS'
+    , msbo=False, scaleFromFile=OFF, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='Model', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, type=
+    DEFORMABLE_BODY)
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/Lower.IGS'
+    , msbo=False, scaleFromFile=OFF, topology=SHELL, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='Lower', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, topology=
+    SHELL, type=DISCRETE_RIGID_SURFACE)
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/LowerPlate.IGS'
+    , msbo=False, scaleFromFile=OFF, topology=SHELL, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='LowerPlate', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, topology=
+    SHELL, type=DISCRETE_RIGID_SURFACE)
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/Tool.IGS'
+    , msbo=False, scaleFromFile=OFF, topology=SHELL, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='Tool', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, topology=
+    SHELL, type=DISCRETE_RIGID_SURFACE)
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/Upper.IGS'
+    , msbo=False, scaleFromFile=OFF, topology=SHELL, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='Upper', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, topology=
+    SHELL, type=DISCRETE_RIGID_SURFACE)
+mdb.openIges(
+    'D:/MyProject(31.11.18)/ver1/bin/Debug/Temp 08.12.2018[14.08.10]/Length 40 Width20 Height80 Angle15 Friction0.28/UpperPlate.IGS'
+    , msbo=False, scaleFromFile=OFF, topology=SHELL, trimCurve=DEFAULT)
+mdb.models['Model-1'].PartFromGeometryFile(combine=False, convertToAnalytical=1
+    , dimensionality=THREE_D, geometryFile=mdb.acis, name='UpperPlate', 
+    stitchAfterCombine=False, stitchEdges=1, stitchTolerance=1.0, topology=
+    SHELL, type=DISCRETE_RIGID_SURFACE)
+mdb.models['Model-1'].parts['Lower'].ReferencePoint(point=(0.0, 0.0, 10))
+mdb.models['Model-1'].parts['Lower'].features.changeKey(fromName='RP', toName=
+    'RP-Lower')
+mdb.models['Model-1'].parts['Lower'].Set(name='Set-Lower', referencePoints=(
+    mdb.models['Model-1'].parts['Lower'].referencePoints[2], ))
+mdb.models['Model-1'].parts['Lower'].Surface(name='Surf-Lower', side1Faces=
+    mdb.models['Model-1'].parts['Lower'].faces.getSequenceFromMask(('[#fff ]', 
+    ), ))
+mdb.models['Model-1'].parts['LowerPlate'].ReferencePoint(point=(0.0, 19.3662, 
+    10))
+mdb.models['Model-1'].parts['LowerPlate'].features.changeKey(fromName='RP', 
+    toName='RP-LowerPlate')
+mdb.models['Model-1'].parts['LowerPlate'].Set(name='Set-LowerPlate', 
+    referencePoints=(
+    mdb.models['Model-1'].parts['LowerPlate'].referencePoints[2], ))
+mdb.models['Model-1'].parts['LowerPlate'].Surface(name='Surf-LowerPlate', 
+    side1Faces=
+    mdb.models['Model-1'].parts['LowerPlate'].faces.getSequenceFromMask((
+    '[#3f ]', ), ))
+mdb.models['Model-1'].parts['Model'].Set(cells=
+    mdb.models['Model-1'].parts['Model'].cells.getSequenceFromMask(('[#1 ]', ), 
+    ), name='Set-Model')
+mdb.models['Model-1'].parts['Model'].Surface(name='Surf-Model', side1Faces=
+    mdb.models['Model-1'].parts['Model'].faces.getSequenceFromMask(('[#3f ]', 
+    ), ))
+mdb.models['Model-1'].parts['Tool'].ReferencePoint(point=(0.0, 40, 20))
+mdb.models['Model-1'].parts['Tool'].features.changeKey(fromName='RP', toName=
+    'RP-Tool')
+mdb.models['Model-1'].parts['Tool'].Set(name='Set-Tool', referencePoints=(
+    mdb.models['Model-1'].parts['Tool'].referencePoints[2], ))
+mdb.models['Model-1'].parts['Tool'].Surface(name='Surf-Tool', side1Faces=
+    mdb.models['Model-1'].parts['Tool'].faces.getSequenceFromMask(('[#3ff ]', 
+    ), ))
+mdb.models['Model-1'].parts['Upper'].ReferencePoint(point=(0.0, 80, 10))
+mdb.models['Model-1'].parts['Upper'].features.changeKey(fromName='RP', toName=
+    'RP-Upper')
+mdb.models['Model-1'].parts['Upper'].Set(name='Set-Upper', referencePoints=(
+    mdb.models['Model-1'].parts['Upper'].referencePoints[2], ))
+mdb.models['Model-1'].parts['Upper'].Surface(name='Surf-Upper', side1Faces=
+    mdb.models['Model-1'].parts['Upper'].faces.getSequenceFromMask(('[#fff ]', 
+    ), ))
+mdb.models['Model-1'].parts['UpperPlate'].ReferencePoint(point=(0.0, 59.5281, 
+    10))
+mdb.models['Model-1'].parts['UpperPlate'].features.changeKey(fromName='RP', 
+    toName='RP-UpperPlate')
+mdb.models['Model-1'].parts['UpperPlate'].Set(name='Set-UpperPlate', 
+    referencePoints=(
+    mdb.models['Model-1'].parts['UpperPlate'].referencePoints[2], ))
+mdb.models['Model-1'].parts['UpperPlate'].Surface(name='Surf-UpperPlate', 
+    side1Faces=
+    mdb.models['Model-1'].parts['UpperPlate'].faces.getSequenceFromMask((
+    '[#3f ]', ), ))
+mdb.models['Model-1'].Material(name='Titan')
+mdb.models['Model-1'].materials['Titan'].Density(table=((4.5e-09, ), ))
+mdb.models['Model-1'].materials['Titan'].Elastic(table=((112000, 0.32), ))
+mdb.models['Model-1'].materials['Titan'].Plastic(table=((1.0, 0.0), (75.0, 
+    0.1), (125.0, 0.2), (140.0, 0.3), (160.0, 0.4), (165.0, 0.5), (167.0, 0.6), 
+    (175.0, 1.0)))
+mdb.models['Model-1'].HomogeneousSolidSection(material='Titan', name=
+    'Section-Titan', thickness=None)
+mdb.models['Model-1'].parts['Model'].SectionAssignment(offset=0.0, offsetField=
+    '', offsetType=MIDDLE_SURFACE, region=Region(
+    cells=mdb.models['Model-1'].parts['Model'].cells.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), sectionName='Section-Titan', thicknessAssignment=
+    FROM_SECTION)
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Lower-1', part=
+    mdb.models['Model-1'].parts['Lower'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='LowerPlate-1', 
+    part=mdb.models['Model-1'].parts['LowerPlate'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Model-1', part=
+    mdb.models['Model-1'].parts['Model'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Tool-1', part=
+    mdb.models['Model-1'].parts['Tool'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Upper-1', part=
+    mdb.models['Model-1'].parts['Upper'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='UpperPlate-1', 
+    part=mdb.models['Model-1'].parts['UpperPlate'])
+mdb.models['Model-1'].ExplicitDynamicsStep(name='Step-1', previous='Initial', 
+    timePeriod=0.05)
+mdb.models['Model-1'].ExplicitDynamicsStep(name='Step-2', previous='Step-1', 
+    timePeriod=0.05)
+mdb.models['Model-1'].ExplicitDynamicsStep(name='Step-3', previous='Step-2', 
+    timePeriod=0.05)
+mdb.models['Model-1'].ExplicitDynamicsStep(name='Step-4', previous='Step-3', 
+    timePeriod=0.05)
+mdb.models['Model-1'].fieldOutputRequests['F-Output-1'].setValuesInStep(
+    numIntervals=30, stepName='Step-4', variables=('S', 'SVAVG', 'PE', 
+    'PEVAVG', 'PEEQ', 'PEEQVAVG', 'LE', 'SE', 'U', 'V', 'A', 'RF', 'CSTRESS', 
+    'EVF'))
+mdb.models['Model-1'].ContactProperty('IntProp-1')
+mdb.models['Model-1'].interactionProperties['IntProp-1'].TangentialBehavior(
+    dependencies=0, directionality=ISOTROPIC, elasticSlipStiffness=None, 
+    formulation=PENALTY, fraction=0.005, maximumElasticSlip=FRACTION, 
+    pressureDependency=OFF, shearStressLimit=None, slipRateDependency=OFF, 
+    table=((0.28, ), ), temperatureDependency=OFF)
+mdb.models['Model-1'].parts['Model'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=3.5)
+mdb.models['Model-1'].parts['Model'].generateMesh()
+mdb.models['Model-1'].parts['Lower'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=10)
+mdb.models['Model-1'].parts['Lower'].generateMesh()
+mdb.models['Model-1'].parts['LowerPlate'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=15)
+mdb.models['Model-1'].parts['LowerPlate'].generateMesh()
+mdb.models['Model-1'].parts['Tool'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=15)
+mdb.models['Model-1'].parts['Tool'].generateMesh()
+mdb.models['Model-1'].parts['Upper'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=10)
+mdb.models['Model-1'].parts['Upper'].generateMesh()
+mdb.models['Model-1'].parts['UpperPlate'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=15)
+mdb.models['Model-1'].parts['UpperPlate'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].SurfaceToSurfaceContactExp(clearanceRegion=None, 
+    createStepName='Step-1', datumAxis=None, initialClearance=OMIT, 
+    interactionProperty='IntProp-1', master=
+    mdb.models['Model-1'].rootAssembly.instances['Upper-1'].surfaces['Surf-Upper']
+    , mechanicalConstraint=KINEMATIC, name='Upper', slave=
+    mdb.models['Model-1'].rootAssembly.instances['Model-1'].surfaces['Surf-Model']
+    , sliding=FINITE)
+mdb.models['Model-1'].interactions['Upper'].setValuesInStep(activeInStep=False, 
+    stepName='Step-3')
+mdb.models['Model-1'].SurfaceToSurfaceContactExp(clearanceRegion=None, 
+    createStepName='Step-1', datumAxis=None, initialClearance=OMIT, 
+    interactionProperty='IntProp-1', master=
+    mdb.models['Model-1'].rootAssembly.instances['Tool-1'].surfaces['Surf-Tool']
+    , mechanicalConstraint=KINEMATIC, name='Tool', slave=
+    mdb.models['Model-1'].rootAssembly.instances['Model-1'].surfaces['Surf-Model']
+    , sliding=FINITE)
+mdb.models['Model-1'].SurfaceToSurfaceContactExp(clearanceRegion=None, 
+    createStepName='Step-1', datumAxis=None, initialClearance=OMIT, 
+    interactionProperty='IntProp-1', master=
+    mdb.models['Model-1'].rootAssembly.instances['Lower-1'].surfaces['Surf-Lower']
+    , mechanicalConstraint=KINEMATIC, name='Lower', slave=
+    mdb.models['Model-1'].rootAssembly.instances['Model-1'].surfaces['Surf-Model']
+    , sliding=FINITE)
+mdb.models['Model-1'].interactions['Lower'].setValuesInStep(activeInStep=False, 
+    stepName='Step-3')
+mdb.models['Model-1'].SurfaceToSurfaceContactExp(clearanceRegion=None, 
+    createStepName='Step-3', datumAxis=None, initialClearance=OMIT, 
+    interactionProperty='IntProp-1', master=
+    mdb.models['Model-1'].rootAssembly.instances['UpperPlate-1'].surfaces['Surf-UpperPlate']
+    , mechanicalConstraint=KINEMATIC, name='UpperPlate', slave=
+    mdb.models['Model-1'].rootAssembly.instances['Model-1'].surfaces['Surf-Model']
+    , sliding=FINITE)
+mdb.models['Model-1'].SurfaceToSurfaceContactExp(clearanceRegion=None, 
+    createStepName='Step-3', datumAxis=None, initialClearance=OMIT, 
+    interactionProperty='IntProp-1', master=
+    mdb.models['Model-1'].rootAssembly.instances['LowerPlate-1'].surfaces['Surf-LowerPlate']
+    , mechanicalConstraint=KINEMATIC, name='LowerPlate', slave=
+    mdb.models['Model-1'].rootAssembly.instances['Model-1'].surfaces['Surf-Model']
+    , sliding=FINITE)
+mdb.models['Model-1'].TabularAmplitude(data=((0.0, 0.0), (1.0, 1.0)), name=
+    'Amp-1', smooth=SOLVER_DEFAULT, timeSpan=STEP)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Fix-Upper', region=
+    mdb.models['Model-1'].rootAssembly.instances['Upper-1'].sets['Set-Upper'], 
+    u1=0.0, u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Fix-UpperPlate', region=
+    mdb.models['Model-1'].rootAssembly.instances['UpperPlate-1'].sets['Set-UpperPlate']
+    , u1=0.0, u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Fix-Tool', region=
+    mdb.models['Model-1'].rootAssembly.instances['Tool-1'].sets['Set-Tool'], 
+    u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Fix-LowerPlate', region=
+    mdb.models['Model-1'].rootAssembly.instances['LowerPlate-1'].sets['Set-LowerPlate']
+    , u1=0.0, u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Fix-Lower', region=
+    mdb.models['Model-1'].rootAssembly.instances['Lower-1'].sets['Set-Lower'], 
+    u1=0.0, u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Load-Upper', region=
+    mdb.models['Model-1'].rootAssembly.instances['Upper-1'].sets['Set-Upper'], 
+    u1=UNSET, u2=-560, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['Model-1'].boundaryConditions['Load-Upper'].setValuesInStep(
+    stepName='Step-2', u2=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Load-Lower', region=
+    mdb.models['Model-1'].rootAssembly.instances['Lower-1'].sets['Set-Lower'], 
+    u1=UNSET, u2=0.0, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['Model-1'].boundaryConditions['Load-Lower'].setValuesInStep(
+    stepName='Step-2', u2=560)
+mdb.models['Model-1'].boundaryConditions['Load-Lower'].setValuesInStep(
+    stepName='Step-3', u2=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Load-UpperPlate', region=
+    mdb.models['Model-1'].rootAssembly.instances['UpperPlate-1'].sets['Set-UpperPlate']
+    , u1=UNSET, u2=0.0, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['Model-1'].boundaryConditions['Load-UpperPlate'].setValuesInStep(
+    stepName='Step-3', u2=-174.562)
+mdb.models['Model-1'].boundaryConditions['Load-UpperPlate'].setValuesInStep(
+    stepName='Step-4', u2=0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude='Amp-1', createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'Load-LoerPlate', region=
+    mdb.models['Model-1'].rootAssembly.instances['LowerPlate-1'].sets['Set-LowerPlate']
+    , u1=UNSET, u2=0.0, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['Model-1'].boundaryConditions['Load-LoerPlate'].setValuesInStep(
+    stepName='Step-4', u2=196.676)
+# Save by admin on Sat Dec 08 15:21:32 2018
